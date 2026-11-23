@@ -11,7 +11,6 @@
   font-display: swap;
 }
 :root {
-  /* The only three authored colors. All other tokens are semantic aliases. */
   --red: #e40038;
   --paper: #faf3e9;
   --ink: #201408;
@@ -342,7 +341,7 @@ h3 { letter-spacing: -.04em; }
   left: 4vw;
   top: 12%;
   width: 92vw;
-  color: var(--ink);
+  color: #201408
   font: 900 clamp(130px,24vw,400px)/.88 var(--title);
   letter-spacing: -.045em;
   text-align: center;
