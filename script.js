@@ -27,13 +27,13 @@ const HUB_M2 = 4000 * 4046.8564224;
 // Schematic silhouettes, not boundary maps. Shoelace areas normalize every
 // polygon so its actual FILLED AREA scales with the landmark's land area.
 const PLACES = [
-  {name:'Vatican City', m2:440000, source:4, points:[[12,0],[62,0],[85,20],[100,60],[76,100],[24,94],[0,55]]},
-  {name:'Rizal Park', m2:540000, source:6, points:[[0,0],[100,0],[100,60],[0,60]]},
-  {name:'Intramuros', m2:640000, source:7, points:[[15,0],[77,0],[100,25],[88,80],[55,100],[8,79],[0,35]]},
-  {name:'Gardens by the Bay', m2:1010000, source:8, points:[[0,67],[20,40],[35,5],[52,0],[62,39],[100,65],[88,85],[50,69],[15,100]]},
-  {name:'Monaco', m2:2080000, source:5, points:[[0,38],[35,9],[72,0],[100,20],[85,47],[51,48],[23,72],[8,65]]},
-  {name:'Central Park', m2:843*4046.8564224, source:9, points:[[0,0],[40,0],[40,100],[0,100]]},
-  {name:'4,000 acres', m2:HUB_M2, source:1, points:[[0,0],[100,0],[100,100],[0,100]]}
+  {name:'Vatican City (City-State)', m2:440000, source:4, points:[[12,0],[62,0],[85,20],[100,60],[76,100],[24,94],[0,55]]},
+  {name:'Rizal Park, Philippines', m2:540000, source:6, points:[[0,0],[100,0],[100,60],[0,60]]},
+  {name:'Intramuros, Philippines', m2:640000, source:7, points:[[15,0],[77,0],[100,25],[88,80],[55,100],[8,79],[0,35]]},
+  {name:'Gardens by the Bay, Singapore', m2:1010000, source:8, points:[[0,67],[20,40],[35,5],[52,0],[62,39],[100,65],[88,85],[50,69],[15,100]]},
+  {name:'Monaco (Country)', m2:2080000, source:5, points:[[0,38],[35,9],[72,0],[100,20],[85,47],[51,48],[23,72],[8,65]]},
+  {name:'Central Park, New York', m2:843*4046.8564224, source:9, points:[[0,0],[40,0],[40,100],[0,100]]},
+  {name:'Pax Silica Land, Philippines', m2:HUB_M2, source:1, points:[[0,0],[100,0],[100,100],[0,100]]}
 ];
 const VIDEOS = [
   {id:'Raz9V9jTDEM', outlet:'GMA NEWS FEED', title:'Pax Silica — Ano ang plano ng Amerika sa Pilipinas?', source:10},
