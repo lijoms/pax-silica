@@ -327,7 +327,7 @@ body::after {
 ::selection { color: var(--paper); background: var(--red); }
 h1, h2 { font-weight: 900; letter-spacing: -.025em; }
 h3 { letter-spacing: -.04em; }
-.masthead { border-bottom: 1px solid currentColor; height: 78px; }
+.masthead {solid currentColor; height: 78px; }
 .wordmark { font-family: var(--title); font-weight: 400; font-size: 32px; }
 .edition { font-size: 10px; letter-spacing: .17em; }
 #menu-toggle { text-transform: uppercase; font: 400 21px var(--title); border: 0; }
