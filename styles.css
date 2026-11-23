@@ -341,7 +341,7 @@ h3 { letter-spacing: -.04em; }
   left: 4vw;
   top: 12%;
   width: 92vw;
-  color: #201408
+  color:var(--ink);
   font: 900 clamp(130px,24vw,400px)/.88 var(--title);
   letter-spacing: -.045em;
   text-align: center;
