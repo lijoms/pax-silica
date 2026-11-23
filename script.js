@@ -19,7 +19,7 @@ const SOURCES = [
   { title: 'Water and energy concerns', publisher: 'ANC · YouTube', url: 'https://www.youtube.com/watch?v=Sxy4XCC5420', note: 'Coverage of environmental and science groups’ concerns; statements reflect the reporting date.' },
   { title: 'Senate inquiry into Pax Silica concerns', publisher: 'ANC · YouTube', url: 'https://www.youtube.com/watch?v=zu9OEMdWSMg', note: 'News coverage of legislative scrutiny.' },
   { title: 'Environmental and science groups explain their concerns', publisher: 'ABS-CBN News · 30 July 2026', url: 'https://www.abs-cbn.com/news/nation/2026/7/30/why-environmental-science-groups-oppose-proposed-pax-silica-hub-in-ph-2015', note: 'Reporting on water and power concerns, alongside the agency response.' },
-  { title: 'Pax Silica is the new face of US imperialism in the Philippines', publisher: 'Al Jazeera· 18 November 2026', url: 'https://www.aljazeera.com/opinions/2026/11/18/pax-silica-is-the-new-face-of-us-imperialism-in-the-philippines', note: An angle on Pax Silica driving US Imperialism in the Philippines' }
+  { title: 'Pax Silica is the new face of US imperialism in the Philippines', publisher: 'Al Jazeera· 18 November 2026', url: 'https://www.aljazeera.com/opinions/2026/11/18/pax-silica-is-the-new-face-of-us-imperialism-in-the-philippines', note: 'An angle on Pax Silica driving US Imperialism in the Philippines' }
 ];
 
 // Shared palette also powers scroll-driven backgrounds and header contrast.
