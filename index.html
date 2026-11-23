@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e40038">
+  <meta name="description" content="An illustrated scroll through Pax Silica: the proposed Philippine hub, its scale, and the people behind the debate.">
+  <title>Pax Silica — A bigger picture</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#chapter-menu">Skip to chapter navigation</a>
+  <!-- Reusable vector artwork: every layer is independently animated. -->
+  <svg class="svg-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="field-lines" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(-32)">
+        <path d="M0 0V28" stroke="#e40038" stroke-width="1.5" fill="none"/>
+      </pattern>
+      <pattern id="ink-lines" width="35" height="35" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+        <path d="M0 0V35" stroke="#faf3e9" stroke-width="1" fill="none"/>
+      </pattern>
+      <symbol id="chip-seal" viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="100" cy="100" r="81" fill="none" stroke="currentColor" stroke-width=".8"/>
+        <path d="M100 9V27M100 173V191M9 100H27M173 100H191M36 36L49 49M151 151L164 164M36 164L49 151M151 49L164 36" stroke="currentColor" stroke-width="4"/>
+        <use href="#chip" x="48" y="48" width="104" height="104" fill="none" stroke="currentColor" stroke-width="2"/>
+      </symbol>
+      <symbol id="rice-stalk" viewBox="0 0 180 350">
+        <path d="M70 348C130 220 130 100 70 10M102 236C66 207 39 211 12 185M112 185C144 155 164 163 177 130M104 120C72 111 54 88 42 63" fill="none" stroke="currentColor" stroke-width="3"/>
+        <g fill="currentColor"><ellipse cx="73" cy="44" rx="10" ry="25" transform="rotate(-25 73 44)"/><ellipse cx="96" cy="77" rx="11" ry="27" transform="rotate(22 96 77)"/><ellipse cx="59" cy="112" rx="12" ry="28" transform="rotate(-45 59 112)"/><ellipse cx="117" cy="142" rx="11" ry="28" transform="rotate(30 117 142)"/><ellipse cx="62" cy="188" rx="13" ry="31" transform="rotate(-58 62 188)"/><ellipse cx="148" cy="184" rx="12" ry="29" transform="rotate(44 148 184)"/><ellipse cx="78" cy="246" rx="13" ry="32" transform="rotate(-44 78 246)"/></g>
+      </symbol>
+      <symbol id="cloud" viewBox="0 0 1000 610">
+        <g fill="currentColor">
+          <ellipse cx="168" cy="350" rx="165" ry="140"/><ellipse cx="275" cy="410" rx="140" ry="135"/>
+          <ellipse cx="420" cy="465" rx="135" ry="135"/><ellipse cx="590" cy="465" rx="150" ry="135"/>
+          <ellipse cx="780" cy="433" rx="140" ry="118"/><ellipse cx="898" cy="348" rx="100" ry="98"/>
+          <ellipse cx="704" cy="265" rx="149" ry="147"/><ellipse cx="484" cy="164" rx="160" ry="160"/>
+          <ellipse cx="335" cy="245" rx="150" ry="145"/><ellipse cx="267" cy="290" rx="126" ry="133"/>
+          <ellipse cx="870" cy="262" rx="79" ry="79"/><ellipse cx="560" cy="350" rx="272" ry="125"/>
+        </g>
+      </symbol>
+      <symbol id="person" viewBox="0 0 100 260">
+        <path d="M17 41C17 2 82 2 83 41V61C81 83 69 98 50 100C31 97 19 81 17 61Z"/>
+        <path d="M22 104L39 92L50 110L61 92L78 104L100 160V260H0V160Z"/>
+        <g fill="var(--face-ink, #201408)"><path d="M22 37Q50 13 78 37V25Q50-8 22 25Z"/><path d="M27 49L42 51L39 56L29 55ZM58 51L73 49L71 55L61 56ZM49 54L43 72H54ZM38 82Q50 76 62 82Q50 91 38 82Z"/></g>
+        <g fill="none" stroke="var(--face-ink, #201408)" stroke-width="1.5"><path d="M26 112L50 136L74 112M50 136V260M26 139V260M74 139V260M8 176H30M70 176H92"/></g>
+      </symbol>
+      <symbol id="chip" viewBox="0 0 100 100"><rect x="25" y="25" width="50" height="50" rx="3"/><path d="M35 7V25M50 7V25M65 7V25M35 75V93M50 75V93M65 75V93M7 35H25M7 50H25M7 65H25M75 35H93M75 50H93M75 65H93"/><rect x="37" y="37" width="26" height="26"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="masthead">
+    <a class="wordmark" href="#" data-go="0" aria-label="Pax Silica, back to beginning">PS<span class="small-star">✦</span></a>
+    <span class="edition">LAND. TECHNOLOGY. PEOPLE.</span>
+    <button id="menu-toggle" aria-expanded="false" aria-controls="chapter-menu">Explore <span>＋</span></button>
+  </header>
+  <nav id="chapter-menu" aria-label="Chapters" hidden>
+    <p class="eyebrow">FOLLOW THE THREAD</p>
+    <a href="#" data-go="0">01 <span>The landscape</span></a>
+    <a href="#" data-go="1.35">02 <span>What is Pax Silica?</span></a>
+    <a href="#" data-go="2.8">03 <span>The proposal</span></a>
+    <a href="#" data-go="4.15">04 <span>A question of scale</span></a>
+    <a href="#" data-go="5.55">05 <span>4,000 acres, compared</span></a>
+    <a href="#" data-go="7">06 <span>The controversy</span></a>
+    <a href="#" data-go="8.45">07 <span>Watch & understand</span></a>
+    <a href="#" data-go="9.95">08 <span>The people</span></a>
+    <a href="#" data-go="11.4">09 <span>The bigger question</span></a>
+    <a href="#" data-go="12.85">10 <span>Sources & notes</span></a>
+    <button id="motion-toggle" aria-pressed="false">Reduce motion</button>
+  </nav>
+
+  <main id="story" aria-label="Pax Silica illustrated story">
+    <div id="opening">
+    <div id="stage">
+      <div class="landscape" aria-hidden="true">
+        <div class="landscape-word"><span>PAX</span><span>SILICA</span></div>
+        <svg class="landscape-sun" viewBox="0 0 200 200"><use href="#chip-seal"/></svg>
+        <svg class="side-cloud left-cloud" viewBox="0 0 1000 610"><use href="#cloud"/></svg>
+        <svg class="side-cloud right-cloud" viewBox="0 0 1000 610"><use href="#cloud"/></svg>
+        <svg class="mountains back" viewBox="0 0 2048 1152" preserveAspectRatio="none"><path fill="#faf3e9" d="M0 185L880 700L1570 320L2048 480V1152H0Z"/><path fill="url(#field-lines)" d="M0 185L880 700L1570 320L2048 480V1152H0Z"/></svg>
+        <svg class="mountains middle" viewBox="0 0 2048 1152" preserveAspectRatio="none"><path fill="#e40038" stroke="#faf3e9" stroke-width="2" d="M0 540L400 305L1640 1152H0Z"/><path d="M0 700L400 405L1440 1152M0 820L400 505L1240 1152M0 940L400 605L1040 1152" fill="none" stroke="#faf3e9" stroke-width="1.2"/></svg>
+        <svg class="mountains front" viewBox="0 0 2048 1152" preserveAspectRatio="none"><path fill="#201408" d="M0 440L960 1152L1705 380L2048 354V1152H0Z"/><path fill="url(#ink-lines)" d="M0 440L960 1152L1705 380L2048 354V1152H0Z"/></svg>
+        <svg class="field-botanical botanical-left" viewBox="0 0 180 350"><use href="#rice-stalk"/></svg>
+        <svg class="field-botanical botanical-right" viewBox="0 0 180 350"><use href="#rice-stalk"/></svg>
+      </div>
+
+      <section class="scene landing" data-scene="0" aria-label="The landscape">
+        <div class="landing-caption"><span class="eyebrow">AN ILLUSTRATED EXPLAINER</span><p>A bigger picture begins<br>with a piece of land.</p></div>
+        <button class="scroll-invitation" data-go="1.35">SCROLL<span>↓</span></button>
+      </section>
+
+      <!-- One persistent cloud connects scenes 1, 2 and 3. -->
+      <div id="main-cloud" aria-hidden="true"><svg class="cloud-body" viewBox="0 0 1000 610"><use href="#cloud"/></svg><svg class="cloud-seal" viewBox="0 0 200 200"><use href="#chip-seal"/></svg></div>
+      <section class="scene introduction" data-scene="1" inert>
+        <div class="intro-copy"><span class="eyebrow">THE FUTURE HAS A FOOTPRINT</span><h1>PAX SILICA</h1><p>A global technology initiative.<br>A very local question.</p></div>
+        <span class="scene-footnote">From semiconductor supply chains to the land beneath them.</span>
+      </section>
+
+      <section class="scene facts" data-scene="2" inert>
+        <div class="facts-title"><span class="eyebrow">FIRST, THE CONTEXT</span><h2>PAX SILICA</h2></div>
+        <div class="fact-table">
+          <h3>What is it for?</h3><p>A U.S.-led initiative to strengthen supply chains for AI and related technologies, including semiconductors and critical minerals. <a href="#" data-source="0" aria-label="Source 1">[1]</a></p>
+          <h3>Who is it for?</h3><p>Partner governments and industries. Philippine officials say the proposed hub could bring investment, research and higher-value manufacturing. <a href="#" data-source="0" aria-label="Source 1">[1]</a></p>
+          <h3>Where does land fit in?</h3><p>The Philippine proposal identifies about <strong>4,000 acres in New Clark City, Tarlac</strong>. This site is one part of the wider initiative. <a href="#" data-source="1" aria-label="Source 2">[2]</a></p>
+        </div>
+      </section>
+
+    </div>
+    </div>
+    <div class="breathing-room" data-from="faf3e9" data-to="faf3e9" aria-hidden="true"></div>
+    <div id="scale-journey">
+    <div id="scale-pin">
+      <section class="scene question" data-scene="3" inert>
+        <span class="eyebrow">LET’S PUT THAT INTO PERSPECTIVE</span>
+        <h2>HOW BIG IS THIS AI<br>AND SEMICONDUCTOR HUB?</h2>
+        <p>4,000 acres. A number is only the beginning.</p>
+        <div class="question-star" aria-hidden="true">✦</div><svg class="question-seal" viewBox="0 0 200 200" aria-hidden="true"><use href="#chip-seal"/></svg>
+      </section>
+      <div id="star-wipe" aria-hidden="true"></div>
+
+      <section class="scene comparison" aria-label="Landmark size sequence" inert>
+        <h2 id="place-title">VATICAN CITY</h2>
+        <div class="comparison-layout">
+          <button class="star-button" id="previous-place" aria-label="Previous landmark"><span aria-hidden="true">★</span><b aria-hidden="true">←</b></button>
+          <svg id="scale-diagram" viewBox="0 0 1100 440" role="img" aria-label="Landmark shapes in increasing land area"><g id="scale-world"></g><g id="scale-labels" aria-hidden="true"></g></svg>
+          <button class="star-button" id="next-place" aria-label="Next landmark"><span aria-hidden="true">★</span><b aria-hidden="true">→</b></button>
+        </div>
+        <p id="scale-announcement" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+      </section>
+    </div>
+    </div>
+    <div class="breathing-room" data-from="e40038" data-to="e40038" aria-hidden="true"></div>
+    <div id="debate-run">
+      <div class="sign-rails" aria-hidden="true"><i></i><i></i><i></i></div>
+      <section class="scene controversy" data-scene="5">
+        <div class="crowd back-crowd" aria-hidden="true"></div>
+        <article class="sign main-sign"><span class="eyebrow">BEYOND THE PROMISE</span><h2>THE CONTROVERSY</h2><p>Officials see an industrial opportunity.<br>Some communities see a future being decided around them. <a href="#" data-source="2">[3]</a></p></article>
+        <div class="crowd front-crowd" aria-hidden="true"></div>
+        <article class="sign side-sign left-sign"><span class="eyebrow">LAND & LIVELIHOODS</span><h3>Who gets heard?</h3><p>CNA reports farmers’ fears about homes, farmland and a lack of information. These are reported concerns, not a confirmed displacement count. <a href="#" data-source="2">[3]</a></p></article>
+        <article class="sign side-sign right-sign"><span class="eyebrow">THE OFFICIAL RESPONSE</span><h3>A different account.</h3><p>BCDA says the site is outside ancestral domains and plans separate water and power systems. These are agency assurances about a proposed development. <a href="#" data-source="3">[4]</a></p></article>
+      </section>
+
+      <section class="scene news" data-scene="6">
+        <div class="news-signs"><article class="sign"><span class="eyebrow">A RESOURCE QUESTION</span><h3>Water has other users.</h3><p>Environmental groups question pressure on shared water resources. BCDA says its system will avoid community supplies. <a href="#" data-source="13">[14]</a></p></article><article class="sign"><span class="eyebrow">A BENEFITS QUESTION</span><h3>Jobs need a pathway.</h3><p>Industry backs the opportunity; experts interviewed by CNA ask how training and local businesses will share the gains. <a href="#" data-source="2">[3]</a></p></article></div>
+        <div class="video-board">
+          <div class="video-header"><h2>WATCH. QUESTION.<br>UNDERSTAND.</h2><div class="gallery-controls"><button id="previous-video" aria-label="Previous news video">←</button><button id="next-video" aria-label="Next news video">→</button></div></div>
+          <div id="video-gallery" tabindex="0" role="region" aria-label="News video gallery. Swipe or use the arrow buttons."></div>
+          <p class="gallery-hint">Swipe or scroll sideways to the next report.</p>
+          <p id="video-announcement" class="sr-only" aria-live="polite"></p>
+        </div>
+      </section>
+    </div>
+    <div class="breathing-room" data-from="e40038" data-to="201408" aria-hidden="true"></div>
+      <section class="scene people" data-scene="7">
+        <svg class="people-seal" viewBox="0 0 200 200" aria-hidden="true"><use href="#chip-seal"/></svg><div class="people-heading"><span class="eyebrow">FOLLOW THE CONNECTIONS</span><h2>WHO LIVES WITH<br>THE CONSEQUENCES?</h2><p>Select a group to explore its stake in the proposed hub.</p></div>
+        <div class="people-layout"><div class="people-map" role="group" aria-label="Stakeholders in Pax Silica">
+          <svg class="connections" viewBox="0 0 600 450" preserveAspectRatio="none" aria-hidden="true"><path d="M300 225L120 80M300 225L480 80M300 225L80 225M300 225L520 225M300 225L120 370M300 225L480 370"/></svg>
+          <div class="map-center"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#chip"/></svg><strong>PAX<br>SILICA</strong></div>
+          <button class="person-node" data-person="0"><svg aria-hidden="true" viewBox="0 0 100 260"><use href="#person"/></svg><span>Aeta communities</span></button>
+          <button class="person-node" data-person="1"><svg aria-hidden="true" viewBox="0 0 100 260"><use href="#person"/></svg><span>Farmers & families</span></button>
+          <button class="person-node" data-person="2"><svg aria-hidden="true" viewBox="0 0 100 260"><use href="#person"/></svg><span>Workers & students</span></button>
+          <button class="person-node" data-person="3"><svg aria-hidden="true" viewBox="0 0 100 260"><use href="#person"/></svg><span>Local businesses</span></button>
+          <button class="person-node" data-person="4"><svg aria-hidden="true" viewBox="0 0 100 260"><use href="#person"/></svg><span>Public agencies</span></button>
+          <button class="person-node" data-person="5"><svg aria-hidden="true" viewBox="0 0 100 260"><use href="#person"/></svg><span>Technology firms</span></button>
+        </div><article id="person-detail" aria-live="polite" aria-atomic="true"><span class="eyebrow" id="person-category"></span><h3 id="person-title"></h3><p id="person-text"></p><div class="person-question"><span class="eyebrow">A QUESTION TO ASK</span><p id="person-question"></p></div><a href="#" id="person-source">Read the reporting ↗</a></article></div>
+        <p class="people-note">A qualitative stakeholder map, not a count of affected people. Questions are editorial prompts; outcomes remain uncertain.</p>
+      </section>
+
+      <div class="breathing-room" data-from="201408" data-to="201408" aria-hidden="true"></div>
+      <section class="scene conclusion" data-scene="8"><svg class="conclusion-seal" viewBox="0 0 200 200" aria-hidden="true"><use href="#chip-seal"/></svg><span class="eyebrow">THE BIGGER QUESTION</span><h2>PROGRESS FOR WHOM?</h2><p>Editorial conclusion · An invitation to keep asking.</p></section>
+
+      <div class="breathing-room end-space" data-from="201408" data-to="faf3e9" aria-hidden="true"></div>
+      <section class="scene sources" data-scene="9">
+        <div class="sources-heading"><span class="eyebrow">LOOK CLOSER</span><h2>SOURCES & NOTES</h2><p>Follow the evidence. Make up your own mind.</p></div>
+        <div class="sources-scroll"><ol id="source-list"></ol>
+          <div class="editor-note"><h3>A note on this story</h3><p>Research checked 21 November 2026. This is an independent educational website. Proposals, assurances and community concerns are attributed; anticipated benefits and harms are not presented as established outcomes. Headings, questions and the conclusion are original editorial copy, not quotations.</p><p>The scale tool uses 4,000 international acres × 4,046.8564224 m² = 16,187,425.6896 m². Landmark definitions and source dates can vary; the measurements are documented in this sources list. Shapes are schematic, not geographic boundary maps; their filled areas are proportional at each step. Your supplied illustrations guided the sequence and transitions. This three-color edition takes visual inspiration from <a href="https://unifiersofjapan.framer.website/hideyoshi" target="_blank" rel="noopener noreferrer">Unifiers of Japan by TOFU Design ↗</a>. The landscape, chip seals and rice-stalk artwork are original vector illustrations; no artwork or font files were copied from the reference. Scale interaction inspired by <a href="https://neal.fun/size-of-space/" target="_blank" rel="noopener noreferrer">The Size of Space ↗</a>.</p><p><strong>Font note:</strong> Kuhlman and DX Lactos files were not supplied. This version uses labeled fallbacks. Add your licensed files in assets/fonts to activate the prepared font rules. Poppins loads online when available, with a system fallback.</p></div>
+        </div><button class="back-top" data-go="0">Back to the landscape ↑</button>
+      </section>
+  </main>
+  <noscript><div class="no-script">Enable JavaScript to explore the scroll animation and interactive graphics.</div></noscript>
+</body>
+</html>
